@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Cavalcante - Analista de Dados & Engenheiro Elétrico</title>
+    
+    <!-- GitHub Pages SPA redirect solution -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <meta name="description" content="Portfólio de Filipe Cavalcante - Analista de Dados especializado em Power BI, Supply Chain e Engenharia de Áudio e Vídeo" />
     <meta name="author" content="Filipe Cavalcante" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
