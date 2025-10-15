@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Cavalcante - Analista de Dados & Engenheiro Elétrico</title>
     
-    <!-- Apply theme instantly from localStorage to prevent flash -->
+    <!-- Prevent theme flash: hide content until theme known on first visit -->
+    <style>
+      html.theme-pending body { visibility: hidden; }
+    </style>
     <script>
       (function() {
-        const theme = localStorage.getItem('site-theme');
+        var theme = localStorage.getItem('site-theme');
         if (theme === 'light') {
           document.documentElement.classList.add('light');
+        } else {
+          // No cached theme, avoid dark flash until app resolves from backend
+          document.documentElement.classList.add('theme-pending');
         }
       })();
     </script>

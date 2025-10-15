@@ -17,16 +17,21 @@ export const useTheme = () => {
   });
 
   useEffect(() => {
-    const theme = settings?.theme || 'dark';
-    
+    const theme = settings?.theme || localStorage.getItem('site-theme') || 'dark';
+
     // Save to localStorage for instant loading on next visit
-    localStorage.setItem('site-theme', theme);
-    
+    try {
+      localStorage.setItem('site-theme', theme);
+    } catch {}
+
     if (theme === 'light') {
       document.documentElement.classList.add('light');
     } else {
       document.documentElement.classList.remove('light');
     }
+
+    // Reveal content if it was hidden to prevent flash
+    document.documentElement.classList.remove('theme-pending');
   }, [settings]);
 
   return settings?.theme || 'dark';
