@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Cavalcante - Analista de Dados & Engenheiro Elétrico</title>
     
+    <!-- Apply theme instantly from localStorage to prevent flash -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('site-theme');
+        if (theme === 'light') {
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+    
     <!-- SPA GitHub Pages redirect handler -->
     <script>
       (function(l) {

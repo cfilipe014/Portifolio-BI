@@ -19,6 +19,9 @@ export const useTheme = () => {
   useEffect(() => {
     const theme = settings?.theme || 'dark';
     
+    // Save to localStorage for instant loading on next visit
+    localStorage.setItem('site-theme', theme);
+    
     if (theme === 'light') {
       document.documentElement.classList.add('light');
     } else {
