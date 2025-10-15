@@ -71,3 +71,17 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Paleta de cores
+ 
+"dark" → Tema escuro roxo atual
+"light" → Tema claro azul profissional (#FFFFFF, #4A90E2, #003366)
+
+**Paleta recomendada**
+- Branco Puro #FFFFFF: fundo principal e áreas de conteúdo.
+- Azul Médio (Vibrante) #4A90E2: ícones e links com destaque.
+- Cinza Muito Claro #F8F8F8: blocos de conteúdo secundário (ex: “Sobre Mim”, “Projetos”).
+- Azul Marinho Profissional #003366: botões, links e elementos de destaque.
+- Cinza Escuro Quase Preto #1C1C1C: textos e elementos com alto contraste.
+
+
